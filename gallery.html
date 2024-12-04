@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page with background video">
+    <title>Gallery</title>
+</head>
+
+<body>
+
+<h1 style="background-color:#D9EEE1; font-family:Verdana; font-size:120% ; text-align:right;">
+<img src="C:\Users\ASUS\Downloads\photo_2024-12-04_00-12-22.jpg" alt="Logo" style="height:35px; width:180px; float:left; margin: 5px 20px;">
+
+	<a href="index.html" target="_parent">Home</a>
+	<a href="biodata.html" target="_parent">Biodata</a>
+	<a href="experience.html" target="_parent">Experience</a>
+	<a href="education.html" target="_parent">My education</a>
+	<a href="family.html" target="_parent">Family</a>
+	<a href="gallery.html" target="_parent">Gallery</a>
+</h1>
+
+<style>
+
+/* Header */
+a:link, a:visited {
+	background-color: #D9EEE1;
+	color: black;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+}
+
+a:hover, a:active {
+	background-color:powderblue;
+}
+
+/* General Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: rockwell;
+	font-size: 11px;
+	color: black;
+	height: 100vh;
+	
+}
+
+h1{
+	position: fixed; /* Sticks the navbar to the top of the page */
+            top: 0;
+            width: 100%; /* Full width */
+            background-color: #333;
+            color: white;
+            z-index: 1000; /* Keeps it above other elements */
+            }
+
+h2{
+	text-align: center;
+       	font-size: 2.5rem;
+   	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	margin-top:50px;
+}
+
+/* Full Page Layout */
+.main-container {
+	position: relative;
+	height: 100vh;
+	}
+
+/* Video Styling */
+video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* Gallery Container */
+.gallery-container {
+      	display: grid;
+      	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+
+/* Responsive grid */
+      	gap: 30px;
+      	padding: 40px;
+      	justify-items: center;
+}
+
+/* Gallery Item */
+.gallery-item {
+      	background-color: #D9EEE1;
+      	border-radius: 12px;
+      	overflow: hidden;
+      	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+	transform: scale(1.05); /* Slight zoom effect */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img{
+      	width: 350px;
+        height: 300px;
+      	display: block;
+      	transition: transform 0.3s ease;
+	object-fit: cover;
+	}
+
+.gallery-item img:hover {
+     	transform: scale(1.0); /* Image zoom effect */
+}
+
+.gallery-item p {
+      	padding: 15px;
+     	text-align: center;
+      	font-size: 1.0rem;
+      	background-color: powderblue;
+      	color: black;
+      	margin: 0;
+      	opacity: 0;
+      	transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover p {
+      	opacity: 1; /* Text appears on hover */
+}
+
+
+
+        }
+  
+</style>
+
+<!-- Main Container with Background Video -->
+	<div class="main-container">
+        
+<!-- Background Video -->
+    	<video autoplay loop muted>
+       	<source src="C:\Users\ASUS\Downloads\Green Blue Yellow Cute Aesthetic Fun Thanks For 	Watching Video (Desktop Wallpaper).mp4"type="video/mp4">
+        </video>
+
+<h2>MY CAPTURED MOMENTS</h2>
+
+<div class="gallery-container">
+<!-- Gallery Item 1 -->
+	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_5_2024-12-02_17-53-07.jpg" alt="Diploma friends">
+      	<p>Diploma friends</p>
+</div>
+
+<!-- Gallery Item 2 -->
+	<div class="gallery-item">
+	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_12_2024-12-02_17-53-07.jpg" alt="Internship friends">
+ 	<p>Internship friends</p>
+</div>
+
+<!-- Gallery Item 3 -->
+	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_10_2024-12-02_17-53-07.jpg" alt="Attending angah's convocation">
+      	<p>Attending angah's convocation</p>
+</div>
+
+<!-- Gallery Item 4 -->
+    	<div class="gallery-item">
+     	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_13_2024-12-02_17-53-07.jpg" alt="MDPT workers">
+      	<p>Last day internship</p>
+</div>
+
+<!-- Gallery Item 5 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_16_2024-12-02_17-53-07.jpg" alt="My support system">
+      	<p>My support system</p>
+</div>
+
+<!-- Gallery Item 6 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_7_2024-12-02_17-53-07.jpg" alt="My siblings">
+      	<p>My siblings</p>
+</div>
+
+<!-- Gallery Item 7 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_29_2024-12-02_17-53-07.jpg" alt="My dormmate in highschool">
+      	<p>My dormmate in highschool</p>
+</div>
+
+<!-- Gallery Item 8 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_27_2024-12-02_17-53-07.jpg" alt="My Dinda Group">
+      	<p>My Dinda Group</p>
+</div>
+
+<!-- Gallery Item 9 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_20_2024-12-02_17-53-07.jpg" alt="My primary school trio">
+      	<p>My primary school trio</p>
+</div>
+
+<!-- Gallery Item 10 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_21_2024-12-02_17-53-07.jpg" alt="My Classmates">
+      	<p>My Classmates</p>
+</div>
+
+<!-- Gallery Item 11 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\photo_2024-12-02_18-51-43.jpg" alt="My diploma trio">
+      	<p>My diploma trio</p>
+</div>
+
+<!-- Gallery Item 12 -->
+    	<div class="gallery-item">
+      	<img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_30_2024-12-02_17-53-07.jpg" alt="My highschool batchmates">
+      	<p>My highschool batchmates</p>
+</div>
+
+
+
+
+</body>
+</html>

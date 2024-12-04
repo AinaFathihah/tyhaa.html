@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page with background video">
+    <title>Family</title>
+</head>
+
+
+<body>
+
+<h1 style="background-color:#D9EEE1; font-family:Verdana; font-size:120% ; text-align:right;">
+<img src="C:\Users\ASUS\Downloads\photo_2024-12-04_00-12-22.jpg" alt="Logo" style="height:35px; width:180px; float:left; margin: 5px 20px;">
+
+	<a href="index.html" target="_parent">Home</a>
+	<a href="biodata.html" target="_parent">Biodata</a>
+	<a href="experience.html" target="_parent">Experience</a>
+	<a href="education.html" target="_parent">My education</a>
+	<a href="family.html" target="_parent">Family</a>
+	<a href="gallery.html" target="_parent">Gallery</a>
+</h1>
+
+<style>
+
+/* Header */
+a:link, a:visited {
+	background-color: #D9EEE1;
+	color: black;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+
+
+ }
+
+a:hover, a:active {
+	background-color:powderblue;
+
+}
+
+/* General Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: rockwell;
+	font-size: 11px;
+	color: black;
+	margin: 0;
+	
+}
+
+h1{
+	position: fixed; /* Sticks the navbar to the top of the page */
+            top: 0;
+            width: 100%; /* Full width */
+            background-color: #333;
+            color: white;
+            z-index: 1000; /* Keeps it above other elements */
+            }
+
+h3{
+	text-align: center;
+       	font-size: 2.5rem;
+   	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	margin-top:50px;
+}
+
+/* Full Page Layout */
+.main-container {
+	position: relative;
+	height: 100vh;
+
+}
+
+/* Video Styling */
+video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* Overlay Content */
+section {
+            padding: 30px;
+            margin:30px auto;
+	width:100%;
+            max-width: 600px;
+            background-color:#D9EEE1;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	font-size: 1.2rem;
+	text-decoration: none;
+	  text-align: justify; 
+	display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 500px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 100px;
+	transition: transform 0.3s ease;
+
+        }
+
+	.gallery img:hover {
+     	transform: scale(1.05); /* Slight zoom effect */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+        
+.call-button {
+	border-radius: 30px;
+            font-size: 20px;
+            transition: background-color 0.3s;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+	border: 1px solid black;
+	
+        }
+        .call-button:hover {
+            background-color: bluepowder;
+
+        }
+        .call-button i {
+	margin-right:20px;
+
+        }
+
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+<!-- Main Container with Background Video -->
+	<div class="main-container">
+
+<!-- Background Video -->
+	<video autoplay loop muted>
+	<source src="C:\Users\ASUS\Downloads\Green Blue Yellow Cute Aesthetic Fun Thanks 	For Watching Video (Desktop Wallpaper).mp4"type="video/mp4">
+</video>
+
+<!-- Overlay Content -->
+<h3>ABOUT MY FAMILY</h3>	
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>MMy family consists of six members: my hardworking parents and four daughters, including myself. Both my mother and father were great parents with an incredible amount of love. Their example taught us the value of perseverance and responsibility. As siblings, we shared a close bond, supporting and motivating each other in everything we did. Our home was a lively and supportive space where we learned from each other and grew together. Being part of such a loving and hardworking family greatly influenced my values ​​and aspirations.""</p>
+</section>
+
+<section id="members">
+    <h2>Our Family Members</h2>
+    <ul>
+        <li><strong>Ahmad Fuad (Father):</strong> A hardworking man who always be the best as the head of the family.</li>
+        <li><strong>Saliza (Mother):</strong> The heart of our home, who is good at dividing her time between work and being a housewife. She is very patient and the best woman I have ever met.</li>
+        <li><strong>Nurul Ellyana Shuhada (First Daughter):</strong> She is responsible, mature, and often takes on the role of guiding her younger siblings. </li>
+        <li><strong>Nurul Shazwa Idani (Second Daughters):</strong> She brings joy and laughter to our home with her playful and curious nature. Her enthusiasm keeps everyone’s spirits high.</li>
+	<li><strong>Nurul Aina Fathihah (Me):</strong> She has a calm and understanding demeanor, often mediating conflicts and ensuring harmony among us. Her kindness and empathy shine through in everything she does.</li>
+        <li><strong>Nurul Qisya Adni (Last Daughters):</strong> She loves art, music, and expressing herself in unique ways. Her imaginative ideas bring a special spark to the family.</li>
+    </ul>
+</section>
+
+<section id="gallery">
+    <h2>Family Photo</h2>
+    <div class="gallery">
+        <img src="C:\Users\ASUS\Downloads\Telegram Desktop\photo_8_2024-12-02_17-53-07.jpg" alt="Family photo">
+            </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2><p>
+        <a href="tel:+60174258306" class="call-button">
+        <i class="fas fa-phone-alt"></i>Ahmad Fuad (Father)</a></li>
+        <a href="tel:+60174362160" class="call-button">
+        <i class="fas fa-phone-alt"></i>Saliza (Mother) </a></li>
+        </section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page with background video">
+    <title>Home</title>
+</head>
+
+<body>
+
+<h1 style="background-color:#D9EEE1; font-family:Verdana; font-size:120% ; text-align:right;">
+<img src="C:\Users\ASUS\Downloads\photo_2024-12-04_00-12-22.jpg" alt="Logo" style="height:35px; width:180px; float:left; margin: 5px 20px;">
+	<a href="index.html" target="_parent">Home</a>
+	<a href="biodata.html" target="_parent">Biodata</a>
+	<a href="experience.html" target="_parent">Experience</a>
+	<a href="education.html" target="_parent">My education</a>
+	<a href="family.html" target="_parent">Family</a>
+	<a href="gallery.html" target="_parent">Gallery</a>
+</h1>
+
+<style>
+
+/* Header */
+a:link, a:visited {
+	background-color: #D9EEE1;
+	color: black;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display:inline-block;
+}
+
+a:hover, a:active {
+	background-color:powderblue;
+}
+
+/* General Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: rockwell;
+	font-size: 11px;
+	color: black;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* Full Page Layout */
+.main-container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* Video Styling */
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+/* Overlay Content */
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	text-align: center;
+	z-index: 1;
+	color: white;
+}
+
+.content h2 {
+	font-size: 3rem;
+	text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+}
+
+.content p {
+	font-size: 1.5rem;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+	margin-bottom: 20px;
+}
+
+
+        .clock {
+            font-size: 40px;
+            color: #fff;
+            padding: 20px 40px;   
+        }
+
+footer {
+        text-align: center; /* Centers the text */
+    color: black;
+    position: fixed; /* Sticks the footer to the bottom */
+    bottom: 0;
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    font-size: 15px;
+    padding: 10px 0; /* Adds vertical spacing inside the footer */
+   
+        }
+
+</style>
+
+<!-- Main Container with Background Video -->
+	<div class="main-container">
+
+<!-- Background Video -->
+	<video autoplay loop muted>
+	<source src="C:\Users\ASUS\Downloads\Green Blue Yellow Cute Aesthetic Fun Thanks 	For Watching Video (Desktop Wallpaper).mp4"type="video/mp4">
+</video>
+
+<!-- Overlay Content -->
+	<div class="content">
+	<h2>HELLO AND HI GUYS!</h2>
+	<p>Lets enter into my world </p>
+</div>
+	<div class="clock" id="digital-clock">
+        <!-- Time will be displayed here -->
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Format time to 2 digits (e.g., 09:05:09)
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
+            seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+            // Display the current time
+            const timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('digital-clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately
+        updateClock();
+    </script>
+
+<footer>
+    <p>&copy; 2024 Tyha Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
